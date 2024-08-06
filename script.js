@@ -51,7 +51,7 @@ search.addEventListener("click", async (event) => {
     try {
         console.log(`Movie: ${movie}`);
         create_ip(movie);
-        const url_s = `http://www.omdbapi.com/?apikey=${api_key}&s=${movie}`;
+        const url_s = `https://www.omdbapi.com/?apikey=${api_key}&s=${movie}`;
         const response_s = await fetch(url_s);
         const data_s = await response_s.json();
         console.log(data_s);
@@ -60,7 +60,7 @@ search.addEventListener("click", async (event) => {
             throw new Error("No data found");
         }
         if (parseInt(totalResults, 10) == 1) {
-            const url_t = `http://www.omdbapi.com/?apikey=${api_key}&t=${movie}`;
+            const url_t = `https://www.omdbapi.com/?apikey=${api_key}&t=${movie}`;
             const response_t = await fetch(url_t);
             const data_t = await response_t.json();
             console.log(data_t);
@@ -90,7 +90,7 @@ search.addEventListener("click", async (event) => {
                         event.preventDefault();
                         console.log(`Movie: ${element.Title}`);
                         create_ip(element.Title);
-                        const url_i = `http://www.omdbapi.com/?apikey=${api_key}&i=${element.imdbID}`;
+                        const url_i = `https://www.omdbapi.com/?apikey=${api_key}&i=${element.imdbID}`;
                         const response_i = await fetch(url_i);
                         const data_i = await response_i.json();
                         console.log(data_i);
