@@ -85,7 +85,7 @@ header{
         justify-content: space-around;
     }
     #main{
-        height:81vh;
+        height:75vh;
     }
 }
 @media (max-width: 500px) {
@@ -102,16 +102,25 @@ header{
     html{
         font-size: 11px;
     }
+    #main{
+        height:75vh;
+    }
     
 }
 @media (max-width:300px){
     html{
         font-size:10px;
     }
+    #main{
+        height:75vh;
+    }
 }
 @media (max-width:250px){
     html{
         font-size:8px;
+    }
+    #main{
+        height:75vh;
     }
 }
 ::-webkit-scrollbar {
