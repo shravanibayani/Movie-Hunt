@@ -90,17 +90,23 @@ header{
 }
 @media (max-width: 500px) {
     html{
-        font-size: 12px;
+        font-size: 14px;
+    }
+    #main{
+        height:75vh;
     }
 }
 @media (max-width: 450px) {
     html{
-        font-size: 12px;
+        font-size: 14px;
+    }
+    #main{
+        height:75vh;
     }
 }
 @media (max-width: 350px) {
     html{
-        font-size: 11px;
+        font-size: 13px;
     }
     #main{
         height:75vh;
@@ -109,7 +115,7 @@ header{
 }
 @media (max-width:300px){
     html{
-        font-size:10px;
+        font-size:12px;
     }
     #main{
         height:75vh;
@@ -117,7 +123,7 @@ header{
 }
 @media (max-width:250px){
     html{
-        font-size:8px;
+        font-size:11px;
     }
     #main{
         height:75vh;
